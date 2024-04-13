@@ -16,32 +16,32 @@ async function ActividadDetail({ params }: any) {
       <Table>
         <TableBody>
           <TableRow>
-            <TableHeader>Fecha</TableHeader>
+            <TableCell>Fecha</TableCell>
             <TableCell>{formatDate(log.fecha)}</TableCell>
           </TableRow>
           <TableRow>
-            <TableHeader>user</TableHeader>
+            <TableCell>user</TableCell>
             <TableCell>{log.user}</TableCell>
           </TableRow>
           <TableRow>
-            <TableHeader>lab</TableHeader>
+            <TableCell>lab</TableCell>
             <TableCell>{log.repo}</TableCell>
           </TableRow>
           <TableRow>
-            <TableHeader>fail</TableHeader>
+            <TableCell>fail</TableCell>
             <TableCell>{log.fail}</TableCell>
           </TableRow>
           <TableRow>
-            <TableHeader>pass</TableHeader>
+            <TableCell>pass</TableCell>
             <TableCell>{log.pass}</TableCell>
           </TableRow>
           <TableRow>
-            <TableHeader>resultado</TableHeader>
+            <TableCell>resultado</TableCell>
             <TableCell>
                 <pre>{log.fichero}</pre></TableCell>
           </TableRow>
           <TableRow>
-            <TableHeader>codigo</TableHeader>
+            <TableCell>codigo</TableCell>
             <TableCell>
                 <pre>{log.test}</pre></TableCell>
           </TableRow>
