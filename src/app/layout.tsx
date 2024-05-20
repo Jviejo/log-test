@@ -21,7 +21,9 @@ export default function RootLayout({
      
       <body className={cn(inter.className, "container")}>
       <Header></Header>
+      <div>
         {children}
+      </div>
       </body>
     </html>
   );

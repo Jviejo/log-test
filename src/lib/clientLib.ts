@@ -14,3 +14,8 @@ export function json(obj: any) {
   
   }
   
+
+  export function formatRepo(item: any) {
+    const user = item.user.split(":")[1];
+    return `https://github.com/${user}/${item.repo}`
+  }

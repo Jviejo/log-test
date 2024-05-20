@@ -13,7 +13,7 @@ async function Lab() {
   const logs = await groupByLab();
   console.log(logs);
   return (
-    <div className="w-100">
+    <div className="">
         <h1 className="text-2xl">Lista Labs</h1>
   
       <Table>
@@ -27,7 +27,7 @@ async function Lab() {
           {logs.map((item: any) => (
             <TableRow key={item._id}>
               <TableCell>
-                <Link href={`/lab/${item._id}`}>{item._id}kk</Link>
+                <Link href={`/lab/${item._id}`}>{item._id}</Link>
               </TableCell>
               <TableCell>{item.count}</TableCell>
             </TableRow>

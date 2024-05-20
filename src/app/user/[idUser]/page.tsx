@@ -6,14 +6,14 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { formatDate } from "@/lib/clientLib";
+import { formatDate, formatRepo } from "@/lib/clientLib";
 import { getLogByUser } from "@/lib/db";
 import Link from "next/link";
 
 async function ActividadUser({params}:any) {
 
   const logs = await  getLogByUser(params.idUser);
-  return ( <div className="w-100">
+  return ( <div className="">
       <h1 className="text-2xl">Lista de test realizados por {params.idUser}</h1>
   
       <Table>
@@ -34,7 +34,11 @@ async function ActividadUser({params}:any) {
                   {formatDate(new Date(item.date))}
                 </Link>
               </TableCell>
-              <TableCell>{item.user}</TableCell>
+              <TableCell>
+              <a target="_blank" href={`${formatRepo(item)}`}>
+                  {item.user}{item.repo}
+                </a>
+              </TableCell>
               <TableCell>{item.repo}</TableCell>
               <TableCell className="text-blue-800">{item.pass}</TableCell>
               <TableCell className="text-red-800">{item.fail}</TableCell>

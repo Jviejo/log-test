@@ -8,7 +8,7 @@ import {
   TableCell,
   Table,
 } from "@/components/ui/table";
-import { formatDate } from "@/lib/clientLib";
+import { formatDate, formatRepo } from "@/lib/clientLib";
 async function ActividadDetail({ params }: any) {
   const log: any = await getLogById(params.idActividad);
   return (
@@ -21,7 +21,11 @@ async function ActividadDetail({ params }: any) {
           </TableRow>
           <TableRow>
             <TableCell>user</TableCell>
-            <TableCell>{log.user}</TableCell>
+            <TableCell>
+            <a target="_blank" href={`${formatRepo(log)}`}>
+                  {log.user}{log.repo}
+                </a>
+            </TableCell>
           </TableRow>
           <TableRow>
             <TableCell>lab</TableCell>
