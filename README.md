@@ -1,4 +1,4 @@
-# APLICACION DE TESTING
+# APLICACION DE TESTING.
 
 # Mover al directorio del proyecto
 
