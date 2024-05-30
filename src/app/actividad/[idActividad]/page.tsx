@@ -17,7 +17,7 @@ async function ActividadDetail({ params }: any) {
         <TableBody>
           <TableRow>
             <TableCell>Fecha</TableCell>
-            <TableCell>{formatDate(log.fecha)}</TableCell>
+            <TableCell>{formatDate(log.date)}</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>user</TableCell>

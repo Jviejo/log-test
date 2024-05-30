@@ -22,6 +22,9 @@ function Header() {
       <h1 className="text-2xl">CodeCripto testing</h1>
       <nav className="flex-1">
         <ul className="flex justify-center gap-3">
+        <li>
+            <Link className={cn(lc)}  href="/">Home</Link>
+          </li>
           <li>
             <Link className={cn(lc)}  href="/user">User</Link>
           </li>

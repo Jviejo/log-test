@@ -2,42 +2,51 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link"
 
+/**
+ * 
+ * 
+js_0010_basico_test
+js_0020_expresiones_test
+js_0030_algo_test
+js_0040_arr_obj_test
+js_0045_oo_test
+js_0050_async_await_test
+ */
+
+
 const proyectos = [
+ 
   {
-    github: "https://github.com/Jviejo/sql_0010.git",
-    descripcion: "HTML BASICO",
+    github: "https://github.com/codecrypto-academy/sql_0010_basico_test.git",
+    descripcion: "sql_0010_basico_test",
   },
   {
-    github: "https://github.com/Jviejo/sql_0010.git",
-    descripcion: "SQL BASICO",
+    github: "https://github.com/codecrypto-academy/sql_0020_avanzado_test.git",
+    descripcion: "sql_0020_avanzado_test",
   },
   {
-    github: "https://github.com/Jviejo/sql_0010.git",
-    descripcion: "SQL AVANZADO",
+    github: "https://github.com/codecrypto-academy/js_0010_basico_test.git",
+    descripcion: "js_0010_basico_test",
   },
   {
-    github: "https://github.com/Jviejo/sql_0010.git",
-    descripcion: "JS BASICO ",
+    github: "https://github.com/codecrypto-academy/js_0020_expresiones_test.git",
+    descripcion: "js_0020_expresiones_test",
   },
   {
-    github: "https://github.com/Jviejo/sql_0010.git",
-    descripcion: "JS EXPRESIONES ",
+    github: "https://github.com/codecrypto-academy/js_0030_algo_test.git",
+    descripcion: "js_0030_algo_test",
   },
   {
-    github: "https://github.com/Jviejo/sql_0010.git",
-    descripcion: "JS ESTRUCTURAS ",
+    github: "https://github.com/codecrypto-academy/js_0040_arr_obj_test.git",
+    descripcion: "js_0040_arr_obj_test",
   },
   {
-    github: "https://github.com/Jviejo/sql_0010.git",
-    descripcion: "JS ARRAYS Y OBJETOS ",
+    github: "https://github.com/codecrypto-academy/js_0045_oo_test.git",
+    descripcion: "js_0045_oo_test",
   },
   {
-    github: "https://github.com/Jviejo/sql_0010.git",
-    descripcion: "JS ORIENTACION A OBJETOS ",
-  },
-  {
-    github: "https://github.com/Jviejo/sql_0010.git",
-    descripcion: "JS ASYNC / AWAIT ",
+    github: "https://github.com/codecrypto-academy/js_0050_async_await_test.git",
+    descripcion: "js_0050_async_await_test",
   },
 ];
 
@@ -56,3 +65,4 @@ export default function Home() {
     </div>
   );
 }
+

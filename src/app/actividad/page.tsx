@@ -16,6 +16,7 @@ async function Actividad() {
  
   return (
     <div className="">
+      <h1 className="text-xl mb-5">Actividad</h1>
       <Table>
         <TableHeader>
           <TableRow>
@@ -34,10 +35,9 @@ async function Actividad() {
                   {formatDate(new Date(item.date))}
                 </Link>
               </TableCell>
-              
               <TableCell>
                 <a target="_blank" href={`${formatRepo(item)}`}>
-                  {item.user}{item.repo}
+                  {item.user}/{item.repo}
                 </a>
               </TableCell>
               <TableCell>{item.repo}</TableCell>
