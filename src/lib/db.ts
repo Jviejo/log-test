@@ -2,11 +2,13 @@
 import { client } from '@/lib/mongoClient';
 import { json } from './clientLib';
 import { ObjectId } from 'mongodb';
+import { revalidatePath } from 'next/cache';  
 
 
 
 export async function getLog() {
   const db = await client.db("logs")
+
   return json(await db.collection("log").find().toArray())
 }
 
@@ -33,6 +35,7 @@ export async function getLogByLab(repo: string) {
 }
 export async function addLog(log: any) {
   const db = await client.db("logs")
+  revalidatePath('/', 'layout')
   return json(await db.collection("log").insertOne(log))
 }
 
