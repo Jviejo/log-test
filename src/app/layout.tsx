@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +19,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     
-      <body className={cn(inter.className, "container")}>
-      <Header></Header>
-      <div>
-        {children}
-      </div>
+      <body className={cn(inter.className
+      )}>
+       
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header></Header>
+          <div className="p-10">{children}</div>
+        </ThemeProvider>
       </body>
     </html>
   );
